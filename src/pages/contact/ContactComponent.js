@@ -4,20 +4,18 @@ import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
-import BlogsImg from "./BlogsImg";
 import AddressImg from "./AddressImg";
 import { Fade } from "react-reveal";
 import "./ContactComponent.css";
 import { greeting, contactPageData } from "../../portfolio.js";
 
 const ContactData = contactPageData.contactSection;
-const blogSection = contactPageData.blogSection;
 const addressSection = contactPageData.addressSection;
 const phoneSection = contactPageData.phoneSection;
 
 class Contact extends Component {
   render() {
-    const theme = this.props.theme;
+    const { theme } = this.props;
     return (
       <div className="contact-main">
         <Header theme={theme} />
@@ -27,7 +25,7 @@ class Contact extends Component {
               <div className="contact-heading-img-div">
                 <img
                   src={require(`../../assets/images/${ContactData["profile_image_path"]}`)}
-                  alt=""
+                  alt="Contact profile"
                 />
               </div>
               <div className="contact-heading-text-div">
@@ -59,10 +57,6 @@ class Contact extends Component {
           <Fade bottom duration={1000} distance="40px">
             <div className="address-heading-div">
               <div className="contact-heading-img-div">
-                {/* <img
-											src={require(`../../assets/images/${addressSection["avatar_image_path"]}`)}
-											alt=""
-										/> */}
                 <AddressImg theme={theme} />
               </div>
               <div className="address-heading-text-div">
@@ -88,13 +82,14 @@ class Contact extends Component {
                   className="contact-header-detail-text subTitle"
                   style={{ color: theme.secondaryText }}
                 >
-                  
+                  {phoneSection["subtitle"]}
+                </p>
               </div>
             </div>
           </Fade>
         </div>
-        <Footer theme={this.props.theme} onToggle={this.props.onToggle} />
-        <TopButton theme={this.props.theme} />
+        <Footer theme={theme} onToggle={this.props.onToggle} />
+        <TopButton theme={theme} />
       </div>
     );
   }
