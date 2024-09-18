@@ -64,7 +64,7 @@ const skills = {
       fileName: "DataScienceImg",
       skills: [
         "⚡ Developing highly scalable production ready models for various deeplearning and statistical use cases",
-        "⚡ Experience of working with Computer Vision and NLP projects",
+        "⚡ Experience of working with Large Language Models and NLP projects",
         "⚡ Complex quantitative modelling for dynamic forecasting and time series analysis",
       ],
       softwareSkills: [
@@ -111,7 +111,7 @@ const skills = {
         "⚡ Experience working on multiple cloud platforms",
         "⚡ Hosting and maintaining websites on virtual machine instances along with integration of databases",
         "⚡ Deploying deep learning models on cloud to use on mobile devices",
-        "⚡ Setting up streaming jobs from DB to Server or vice-versa on GCP and AWS",
+        "⚡ Setting up streaming jobs from DB to Server or vice-versa on GCP, AWS and Azure",
       ],
       softwareSkills: [
         {
@@ -181,7 +181,7 @@ const degrees = {
     {
       title: "Syracuse University",
       subtitle: "M.S in Applied Data Science",
-      logo_path: "iiitk_logo.png",
+      logo_path: "syracuse-university-logo.png",
       alt_name: "Syracuse University",
       duration: "2023 - 2025",
       descriptions: [
@@ -193,7 +193,7 @@ const degrees = {
     {
       title: "Jawaharlal Nehru Technological University, Kakinada",
       subtitle: "B.Tech in Computer Science and Engineering",
-      logo_path: "iu_logo.png",
+      logo_path: "jntuk_logo.png",
       alt_name: "JNTUK",
       duration: "2015 - 2019",
       descriptions: [
@@ -324,7 +324,7 @@ const experience = {
   title: "Experience",
   subtitle: "Work, Internship and Volunteership",
   description:
-    "I have worked with many evolving startups as ML and DL Developer, Designer and Software Architect. I have also worked with some well established companies mostly as AI Developer. I love organising events and that is why I am also involved with many opensource communities as a representative.",
+    "I have worked with many evolving companies as Data Scientist and Data Engineer.",
   header_image_path: "experience.svg",
   sections: [
     {
@@ -332,14 +332,14 @@ const experience = {
       work: true,
       experiences: [
         {
-          title: "Machine Learning Engineer",
-          company: "TikTok Inc.",
-          company_url: "https://www.tiktok.com/en/",
-          logo_path: "tiktok_logo.png",
-          duration: "June 2023 - Present",
-          location: "San Jose, CA, USA",
+          title: "Data Analyst",
+          company: "Syracuse University",
+          company_url: "https://case.syr.edu/",
+          logo_path: "syracuse-university-logo.png",
+          duration: "May 2024 - Aug 2024",
+          location: "Syracuse, NY, USA",
           description:
-            "Improving ads ranking models on the core TikTok product. Experience working on modeling two-tower architectures like DeepFM, Wide & deep learning, etc. Working on Large Language Models (LLM) pretraining and Large Multi-modal Model (LMM) finetuning strategies.",
+            "",
           color: "#000000",
         },
         {
