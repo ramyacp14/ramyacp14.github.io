@@ -45,11 +45,12 @@
       "url": "https://github.com/ramyacp14/Vision-Mart",
       "description": "Developed an integrated platform to unify Vision Books, Vision Flicks, Vision Music, and Vision Mart. Utilized Snowflake for data warehousing, DBT for data transformation, and Power BI for creating dashboards and business analytics. The framework includes data integration, processing, and visualization to improve operations and customer experience.",
       "isFork": false,
-       "languages": [
+      "languages": [
         {
           "name": "Python",
           "iconifyClass": "logos-python"
         }
+      ]
     },
     {
       "id": "R_kgDOGcPKSQ",
@@ -57,11 +58,12 @@
       "url": "https://github.com/ramyacp14/Energy-Consumption-Analysis",
       "description": "Developed predictive models for energy consumption using XGBoost with hyperparameter tuning, achieving 88.58% accuracy. Created an interactive Shiny app for visualizing energy usage patterns and the impact of temperature increases, utilizing R and Jupyter Notebook for analysis and visualization.",
       "isFork": false,
-       "languages": [
+      "languages": [
         {
           "name": "Python",
           "iconifyClass": "logos-python"
         }
+      ]
     },
     {
       "id": "MDEwOlJlcG9zaXRvcnkzMjU5NDM1MTE=",
@@ -69,11 +71,12 @@
       "url": "https://github.com/ramyacp14/Virtual-Business-Card",
       "description": "Developed an interactive virtual business card for RSR Restaurant using Unity and C#. The application integrates Augmented Reality (AR) to create an engaging digital business card experience, enhancing user interaction with the restaurant’s branding.",
       "isFork": false,
-       "languages": [
+      "languages": [
         {
           "name": "Python",
           "iconifyClass": "logos-python"
         }
+      ]
     }
   ]
 }
