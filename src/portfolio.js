@@ -329,6 +329,7 @@ const experience = {
   sections: [
     {
       title: "Work",
+      work: true,
       experiences: [
         {
           title: "Data Analyst",
