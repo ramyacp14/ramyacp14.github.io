@@ -2,8 +2,8 @@
   "data": [
     {
       "id": "R_kgDOJWL0-g",
-      "name": "https://github.com/ramyacp14/Document-based-Question-and-Answers",
-      "url": "https://github.com/ashutosh1919/mdp-diffusion",
+      "name": "Document-based Question and Answers",
+      "url": "https://github.com/ramyacp14/Document-based-Question-and-Answers",
       "description": "Developed a document question answering system that utilizes Llama and LangChain for contextual and accurate answers.",
       "isFork": false,
       "languages": [
@@ -43,7 +43,7 @@
       "id": "R_kgDOG0_8uQ",
       "name": "Vision Mart",
       "url": "https://github.com/ramyacp14/Vision-Mart",
-      "description": "Developed an integrated platform to unify Vision Books, Vision Flicks, Vision Music, and Vision Mart. Utilized Snowflake for data warehousing, DBT for data transformation, and Power BI for creating dashboards and business analytics. The framework includes data integration, processing, and visualization to improve operations and customer experience",
+      "description": "Developed an integrated platform to unify Vision Books, Vision Flicks, Vision Music, and Vision Mart. Utilized Snowflake for data warehousing, DBT for data transformation, and Power BI for creating dashboards and business analytics. The framework includes data integration, processing, and visualization to improve operations and customer experience.",
       "isFork": false
     },
     {
@@ -57,9 +57,8 @@
       "id": "MDEwOlJlcG9zaXRvcnkzMjU5NDM1MTE=",
       "name": "Virtual Business Card",
       "url": "https://github.com/ramyacp14/Virtual-Business-Card",
-      "description": "Developed an interactive virtual business card for RSR Restaurant using Unity and C#. The application integrates Augmented Reality (AR) to create an engaging digital business card experience, enhancing user interaction with the restaurant’s branding",
+      "description": "Developed an interactive virtual business card for RSR Restaurant using Unity and C#. The application integrates Augmented Reality (AR) to create an engaging digital business card experience, enhancing user interaction with the restaurant’s branding.",
       "isFork": false
-      ]
     }
   ]
 }
