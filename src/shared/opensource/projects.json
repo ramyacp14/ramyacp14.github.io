@@ -31,13 +31,7 @@
       "createdAt": "2022-02-11T14:50:20Z",
       "url": "https://github.com/ashutosh1919/react-awesome-shapes",
       "description": "🌀 Insert Awesome Shapes into Your React Site with Ease.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "HTML",
-          "iconifyClass": "logos-html-5"
-        }
-      ]
+      "isFork": false
     },
     {
       "id": "R_kgDOGcPKSQ",
@@ -45,13 +39,7 @@
       "createdAt": "2021-11-26T17:56:07Z",
       "url": "https://github.com/ashutosh1919/neuro-symbolic-sudoku-solver",
       "description": "⚙️ Solving sudoku using Deep Reinforcement learning in combination with powerful symbolic representations.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "Python",
-          "iconifyClass": "logos-python"
-        }
-      ]
+      "isFork": false
     },
     {
       "id": "MDEwOlJlcG9zaXRvcnkzMjU5NDM1MTE=",
