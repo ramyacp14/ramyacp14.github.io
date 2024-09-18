@@ -9,7 +9,7 @@ const settings = {
 const seo = {
   title: "Ramya's Portfolio",
   description:
-    "An exceptionally talented data science professional with a knack for leveraging cutting-edge technologies to drive impactful solutions and a passion for continuous learning and innovation!",
+    "Data scientist by skill, Engineer of intelligent solutions, Innovator by nature—always exploring the art of problem-solving. ",
   og: {
     title: "Ramya Chowdary Patchala Portfolio",
     type: "website",
@@ -21,9 +21,9 @@ const seo = {
 const greeting = {
   title: "Ramya Chowdary Patchala",
   logo_name: "RamyaPatchala",
-  nickname: "layman_brother",
+  nickname: "",
   subTitle:
-    "An exceptionally talented data science professional with a knack for leveraging cutting-edge technologies to drive impactful solutions and a passion for continuous learning and innovation!",
+    "Data scientist by skill, Engineer of intelligent solutions, Innovator by nature—always exploring the art of problem-solving.",
   resumeLink:
     "https://drive.google.com/file/d/1viBOSpYOSHiDZ7h8rZsiAeY_2hDr2Lak/",
   portfolio_repository: "https://github.com/ramyacp14/portfolio",
