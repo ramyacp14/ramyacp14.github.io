@@ -6,13 +6,8 @@
       "createdAt": "2023-04-13T04:18:19Z",
       "url": "https://github.com/ashutosh1919/mdp-diffusion",
       "description": "Text-guided image editing by manipulating diffusion path without any training.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "Python",
-          "iconifyClass": "logos-python"
-        }
-      ]
+      "isFork": false
+      
     },
     {
       "id": "R_kgDOG_vYHA",
@@ -20,13 +15,7 @@
       "createdAt": "2022-03-13T20:41:33Z",
       "url": "https://github.com/ashutosh1919/explainable-cnn",
       "description": "📦 PyTorch based visualization package for generating layer-wise explanations for CNNs.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "Python",
-          "iconifyClass": "logos-python"
-        }
-      ]
+      "isFork": false
     },
     {
       "id": "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
@@ -34,13 +23,7 @@
       "createdAt": "2020-03-06T16:26:54Z",
       "url": "https://github.com/ashutosh1919/masterPortfolio",
       "description": "🔥 The Complete Customizable Software Developer Portfolio Template which lets you showcase your work and provides each and every detail about you as Software Developer.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "HTML",
-          "iconifyClass": "logos-html-5"
-        }
-      ]
+      "isFork": false
     },
     {
       "id": "R_kgDOG0_8uQ",
@@ -77,7 +60,7 @@
       "url": "https://github.com/ashutosh1919/react-liquidswipe",
       "description": "🚀 Smooth Liquid Swipe Animation to transition between different components.",
       "isFork": false
-      ]
+      
     }
   ]
 }
