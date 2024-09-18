@@ -346,7 +346,7 @@ const experience = {
           title: "Data Scientist",
           company: "SG Analytics",
           company_url: "https://www.sganalytics.com/",
-          logo_path: "sg_analytics_logo.jpeg",
+          logo_path: "sg_analytics_logo.jpg",
           duration: "Sep 2022 - Aug 2023",
           location: "Hyderabad, India",
           description:
