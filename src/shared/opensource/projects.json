@@ -76,12 +76,7 @@
       "createdAt": "2021-01-01T08:31:51Z",
       "url": "https://github.com/ashutosh1919/react-liquidswipe",
       "description": "🚀 Smooth Liquid Swipe Animation to transition between different components.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
-        }
+      "isFork": false
       ]
     }
   ]
