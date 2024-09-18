@@ -11,7 +11,7 @@ import {
 } from "../../portfolio.js";
 import ProjectsData from "../../shared/opensource/projects.json";
 import "./Projects.css";
-import ProjectsImg from "./ProjectsImg";
+#import ProjectsImg from "./ProjectsImg";
 
 class Projects extends Component {
   render() {
@@ -23,7 +23,10 @@ class Projects extends Component {
           <Fade bottom duration={2000} distance="40px">
             <div className="projects-heading-div">
               <div className="projects-heading-img-div">
-                <ProjectsImg theme={theme} />
+                <img
+                  src={require(`../../assests/images/Projects_top.png`)}
+                  alt=""
+                />              
               </div>
               <div className="projects-heading-text-div">
                 <h1
