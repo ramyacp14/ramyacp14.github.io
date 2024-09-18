@@ -27,7 +27,7 @@ class Projects extends Component {
             <div className="projects-heading-div">
               <div className="projects-heading-img-div">
                 <img
-                  src={require(`../../assests/images/Projects_top.png`)}
+                  src={require(`../../assets/images/Projects_top.png`)}
                   alt=""
                 />
                 {/* <ProjectsImg theme={theme} /> */}
