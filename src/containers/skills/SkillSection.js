@@ -42,22 +42,6 @@ class SkillSection extends Component {
                   </h1>
                 </Fade>
 
-                <Fade right duration={1500}>
-                  <div>
-                    {skill.skills.map((skillSentence, i) => {
-                      return (
-                        <p
-                          key={i}
-                          className="subTitle skills-text"
-                          style={{ color: theme.secondaryText }}
-                        >
-                          {skillSentence}
-                        </p>
-                      );
-                    })}
-                  </div>
-                </Fade>
-
                
 <Fade right duration={1500}>
                   <SoftwareSkill logos={skill.softwareSkills} />
