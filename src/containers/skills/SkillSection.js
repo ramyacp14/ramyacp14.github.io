@@ -43,7 +43,13 @@ class SkillSection extends Component {
                   </h1>
                 </Fade>
                 <Fade right duration={1500}>
-                  <SoftwareSkill logos={skill.softwareSkills} />
+                <div className="skills-image-div">
+                  <img
+                    alt="Ramya is building pipelines"
+                    src={require(`../../assets/images/working.png`)}
+                  ></img> 
+                  {/*  <GetSkillSvg fileName={skill.fileName} theme={theme} />*/}
+                </div>
                 </Fade>
                 <Fade right duration={2000}>
                   <div>
