@@ -4,7 +4,6 @@ import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
-import AddressImg from "./AddressImg";
 import { Fade } from "react-reveal";
 import "./ContactComponent.css";
 import { greeting, contactPageData } from "../../portfolio.js";
@@ -52,11 +51,17 @@ class Contact extends Component {
               </div>
             </div>
           </Fade>
-          
+
+          {/* Address Section with blog_image */}
           <Fade bottom duration={1000} distance="40px">
             <div className="address-heading-div">
               <div className="contact-heading-img-div">
-                <AddressImg theme={theme} />
+                {/* Render blog_image instead of AddressImg */}
+                <img
+                  src={require(`../../assets/images/blogs_image.png`)}
+                  alt="Blog image"
+                  className="blog-image"
+                />
               </div>
               <div className="address-heading-text-div">
                 <h1
@@ -71,7 +76,6 @@ class Contact extends Component {
                 >
                   {addressSection["subtitle"]}
                 </p>
-                
               </div>
             </div>
           </Fade>
