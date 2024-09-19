@@ -8,19 +8,11 @@ import FullStackImg from "./FullStackImg";
 import CloudInfraImg from "./CloudInfraImg";
 import DesignImg from "./DesignImg";
 
-function GetSkillSvg(props) {
-  if (props.fileName === "DataScienceImg")
-    return <DataScienceImg theme={props.theme} />;
-  else if (props.fileName === "FullStackImg")
-    return <FullStackImg theme={props.theme} />;
-  else if (props.fileName === "CloudInfraImg")
-    return <CloudInfraImg theme={props.theme} />;
-  return <DesignImg theme={props.theme} />;
-}
 
 class SkillSection extends Component {
   render() {
     const theme = this.props.theme;
+
     return (
       <div>
         {skills.data.map((skill, i) => {
@@ -28,11 +20,18 @@ class SkillSection extends Component {
             <div key={i} className="skills-main-div">
               <Fade left duration={2000}>
                 <div className="skills-image-div">
-                  <img
-                    alt="Ramya is Analysing Data"
-                    src={require(`../../assets/images/Projects_top.png`)}
-                  ></img> 
-                  {/*  <GetSkillSvg fileName={skill.fileName} theme={theme} />*/}
+                  {/* Conditionally render image based on skill's fileName */}
+                  {skill.fileName === "DataScienceImg" ? (
+                    <img
+                      alt="Data Science & AI"
+                      src={require(`../../assets/images/Projects_top.png`)}
+                    />
+                  ) : skill.fileName === "CloudInfraImg" ? (
+                    <img
+                      alt="Cloud Infrastructure"
+                      src={require(`../../assets/images/working.png`)}
+                    />
+                  ) : null}
                 </div>
               </Fade>
 
@@ -42,16 +41,8 @@ class SkillSection extends Component {
                     {skill.title}
                   </h1>
                 </Fade>
+
                 <Fade right duration={1500}>
-                <div className="skills-image-div">
-                  <img
-                    alt="Ramya is building pipelines"
-                    src={require(`../../assets/images/working.png`)}
-                  ></img> 
-                  {/*  <GetSkillSvg fileName={skill.fileName} theme={theme} />*/}
-                </div>
-                </Fade>
-                <Fade right duration={2000}>
                   <div>
                     {skill.skills.map((skillSentence, i) => {
                       return (
@@ -62,6 +53,29 @@ class SkillSection extends Component {
                         >
                           {skillSentence}
                         </p>
+                      );
+                    })}
+                  </div>
+                </Fade>
+
+                <Fade right duration={2000}>
+                  <div className="software-skills">
+                    {skill.softwareSkills.map((softwareSkill, i) => {
+                      return (
+                        <div key={i} className="software-skill-div">
+                          <i
+                            className={`iconify ${softwareSkill.fontAwesomeClassname}`}
+                            style={softwareSkill.style}
+                          ></i>
+                          {softwareSkill.skillName && (
+                            <span
+                              className="skill-name"
+                              style={{ color: theme.secondaryText }}
+                            >
+                              {softwareSkill.skillName}
+                            </span>
+                          )}
+                        </div>
                       );
                     })}
                   </div>
