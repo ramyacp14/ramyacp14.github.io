@@ -420,7 +420,7 @@ const contactPageData = {
     country: "USA",
     region: "New York",
     postalCode: "13210",
-    avatar_image_path: "address_image.svg",
+    avatar_image_path: "blogs_image.png",
   },
 };
 
