@@ -4,15 +4,31 @@ import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 import { skills } from "../../portfolio";
 import { Fade } from "react-reveal";
 import DataScienceImg from "./DataScienceImg";
-import FullStackImg from "./FullStackImg";
 import CloudInfraImg from "./CloudInfraImg";
-import DesignImg from "./DesignImg";
 
+function GetSkillImage(props) {
+  // Conditional image rendering based on fileName (DataScienceImg or CloudInfraImg)
+  if (props.fileName === "DataScienceImg") {
+    return (
+      <img
+        alt="Ramya is working on data science project"
+        src={require(`../../assets/images/Projects_top.png`)}
+      />
+    );
+  } else if (props.fileName === "CloudInfraImg") {
+    return (
+      <img
+        alt="Ramya is working on cloud architecture"
+        src={require(`../../assets/images/working.png`)}
+      />
+    );
+  }
+  return null;
+}
 
 class SkillSection extends Component {
   render() {
     const theme = this.props.theme;
-
     return (
       <div>
         {skills.data.map((skill, i) => {
@@ -20,18 +36,8 @@ class SkillSection extends Component {
             <div key={i} className="skills-main-div">
               <Fade left duration={2000}>
                 <div className="skills-image-div">
-                  {/* Conditionally render image based on skill's fileName */}
-                  {skill.fileName === "DataScienceImg" ? (
-                    <img
-                      alt="Data Science & AI"
-                      src={require(`../../assets/images/Projects_top.png`)}
-                    />
-                  ) : skill.fileName === "CloudInfraImg" ? (
-                    <img
-                      alt="Cloud Infrastructure"
-                      src={require(`../../assets/images/working.png`)}
-                    />
-                  ) : null}
+                  {/* Display the appropriate image for the skill section */}
+                  <GetSkillImage fileName={skill.fileName} theme={theme} />
                 </div>
               </Fade>
 
@@ -43,39 +49,31 @@ class SkillSection extends Component {
                 </Fade>
 
                 <Fade right duration={1500}>
-                  <div>
-                    {skill.skills.map((skillSentence, i) => {
-                      return (
-                        <p
-                          key={i}
-                          className="subTitle skills-text"
-                          style={{ color: theme.secondaryText }}
-                        >
-                          {skillSentence}
-                        </p>
-                      );
-                    })}
+                  {/* Only render the logos for software skills */}
+                  <div className="software-skills-container">
+                    {skill.softwareSkills.map((logo, index) => (
+                      <div key={index} className="software-skill-logo">
+                        {logo.fontAwesomeClassname ? (
+                          <i className={logo.fontAwesomeClassname} style={logo.style}></i>
+                        ) : (
+                          <img
+                            src={require(`../../assets/images/${logo.imageSrc}`)}
+                            alt={logo.skillName}
+                            style={logo.style}
+                          />
+                        )}
+                      </div>
+                    ))}
                   </div>
                 </Fade>
 
                 <Fade right duration={2000}>
-                  <div className="software-skills">
-                    {skill.softwareSkills.map((softwareSkill, i) => {
+                  <div>
+                    {skill.skills.map((skillSentence, i) => {
                       return (
-                        <div key={i} className="software-skill-div">
-                          <i
-                            className={`iconify ${softwareSkill.fontAwesomeClassname}`}
-                            style={softwareSkill.style}
-                          ></i>
-                          {softwareSkill.skillName && (
-                            <span
-                              className="skill-name"
-                              style={{ color: theme.secondaryText }}
-                            >
-                              {softwareSkill.skillName}
-                            </span>
-                          )}
-                        </div>
+                        <p key={i} className="subTitle skills-text" style={{ color: theme.secondaryText }}>
+                          {skillSentence}
+                        </p>
                       );
                     })}
                   </div>
