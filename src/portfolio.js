@@ -325,7 +325,7 @@ const experience = {
   subtitle: "Work, Internship and Volunteership",
   description:
     "I have worked with many evolving companies as Data Scientist and Data Engineer.",
-  header_image_path: "experience.svg",
+  header_image_path: "working.png",
   sections: [
     {
       title: "Work",
